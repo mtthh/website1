@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kluge Straßen</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    
+<body>
+
+<header>
+    <b>Kluge Straße</b>
+    
+</header>
+<nav>
+    <div class="breadcrumb" id="breadcrumb" >Home</div>
+
+</nav>
+
+<mainmenu>
+    <!--<div class="column main-column" id="mainMenu" style="display: flex;" >
+        <ul>
+            <li><a href="#"><input type="button" class="Button1" value="Klimafitness" name="name_klimafitness"  onclick="showSubMenu('sub1', 'Klimafitness', 'main')"></a></li>
+            <li><a href="#"><input type="button" class="Button1" value="Gesundheit" name="name_gesundheit" onclick="showSubMenu('sub2', 'Gesundheit', 'main')"></a></li>
+            <li><a href="#"><input type="button" class="Button1" value="Mobilität" name="name_mobilitaet" onclick="showSubMenu('sub3', 'Mobilität', 'main')"></a></li>
+        </ul>
+    </div>-->
+
+    <button type="button" class="collapsible">Klimafitness</button>
+    <div class="content">
+        <b>test</b>
+    </div>
+</mainmenu>
+
+<submenu1>
+    <!--sub1-1 Klimafitness-->
+    <div class="column sub-column1" id="sub1-1">
+        <ul>
+            <li><a href="#"><input type="button" class="Button1" value="Beschattung" name="name_beschattung" onclick="showSubMenu('sub1-1', 'Beschattung','sub1')"></a></li>
+            <li><a href="#"><input type="button" class="Button1" value="Grünfläche" name="name_gruenflaeche" onclick="showSubMenu('sub1-2', 'Grünfläche','sub1')"></a></li>
+            <li><a href="#"><input type="button" class="Button1" value="Wasser" name="name_wasser" onclick="showSubMenu('sub1-3', 'Wasser','sub1')"></a></li>
+        </ul>
+    </div>
+    <!--sub2-1 Gesundheit-->
+    <div class="column sub-column1" id="sub2-1">
+
+        <ul>
+            <li><a href="#"><input type="button" class="Button1" value="Lärmbelastung" name="name_laermbelestigung" onclick="showSubMenu('sub2-1', 'Lärmbelastung','sub1')"></a></li>
+            <li><a href="#"><input type="button" class="Button1" value="Erschütterung" name="name_erschuetterung" onclick="showSubMenu('sub2-2', 'Erschütterung','sub1')"></a></li>
+            <li><a href="#"><input type="button" class="Button1" value="Subjetive Verkerhssicherheit" name="name_subj_verkehrssicherheit" onclick="showSubMenu('sub2-3', 'Subjetive Verkerhssicherheit', 'sub1')"></a></li>
+        </ul>
+    </div>
+</submenu1>
+<submenu2>
+    <!--sub1-1-1 Beschattung-->
+    <div class="column" id="sub1-1-1">
+        <ul>
+            <li><a href="#"><input type="button" class="Button1" value="Bäume" name="name_baume" onclick="openBilder('sub1-1-1-baeume', 'Bäume','sub2')"></a></li>
+            <li><a href="#"><input type="button" class="Button1" value="Baumarten" name="name_baumarten" onclick="openBilder('sub1-1-1-baumarten', 'Baumarten','sub2')"></a></li>
+            <li><a href="#"><input type="button" class="Button1" value="Baunkornenüberdeckung" name="name_baumkronenueberdeckung" onclick="openBilder('sub1-1-1-baumkronenueberdeckung', 'Baunkornenüberdeckung','sub2')"></a></li>
+        </ul>
+    </div>
+    <!--sub1-2-1 Grünfläche-->
+    <div class="column" id="sub1-2-1">
+        <ul>
+          <li><a href="#"><input type="button" class="Button1" value="Lärmbelastung" name="name_laermbelestigung" onclick="openBilder('sub1-2-1-laermbelestigung', 'Lärmbelastung','sub2')"></a></li>
+          <li><a href="#"><input type="button" class="Button1" value="Erschütterung" name="name_erschuetterung" onclick="openBilder('sub1-2-1-erschuetterung', 'Erschütterung','sub2')"></a></li>
+          <li><a href="#"><input type="button" class="Button1" value="Subjetive Verkerhssicherheit" name="name_subj_verkehrssicherheit" onclick="openBilder('sub1-2-1-subj_verkehrssicherheit', 'Subjetive Verkerhssicherheit','sub2')"></a></li>
+        </ul>
+    </div>
+
+    
+
+</submenu2>
+<article>
+    <div class="bilder" id="sub1-1-1-baeume">
+        <div class="rateD">
+            <b>Baum1</b>
+        </div>
+        <div class="rateC">
+            <b>Baum2</b>
+        </div>
+        <div class="rateB">
+            <b>Baum3</b>
+        </div>
+        <div class="rateA">
+            <b>Baum 4</b>
+        </div>
+    </div>
+    
+    <div class="bilder" id="sub1-1-1-baumarten">
+        <b class="rateD">Baumart1</b>
+    </div>
+
+    <div class="bilder" id="sub1-1-1-baumkronenueberdeckung">
+        <b class="rateD">Baumkrone1</b>
+    </div>
+
+</article>
+
+</body>
+</html>
